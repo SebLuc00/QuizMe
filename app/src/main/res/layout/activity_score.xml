@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="quizme.quizmee.MainActivity"
+    android:background="@drawable/tlo2"
+    android:id="@+id/lin_lay"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Tabela wyników"
+        android:textColor="#ffffff"
+        android:textSize="40sp" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="29dp"
+        android:layout_weight="0.05"
+        android:text="Najlepsi gracze"
+        android:textColor="#FFD700"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Gold"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/score1"
+        android:gravity="center"
+        android:text="Gracz1    ----    00:00"
+        android:textColor="#ffffff"
+        android:textSize="30sp" />
+
+    <TextView
+        android:id="@+id/Silver"
+        android:background="@drawable/score2"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="Gracz2    ----    00:00" />
+    <TextView
+        android:id="@+id/Bronze"
+        android:background="@drawable/score3"
+        android:gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="Gracz3    ----    00:00" />
+    <TextView
+        android:id="@+id/Four"
+        android:background="@drawable/scorex"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="Gracz4    ----    00:00" />
+    <TextView
+        android:id="@+id/Five"
+        android:layout_width="wrap_content"
+        android:background="@drawable/scorex"
+        android:gravity="center"
+        android:layout_height="48dp"
+        android:layout_marginTop="15dp"
+        android:textSize="30sp"
+        android:textColor="#ffffff"
+        android:text="Gracz5    ----    00:00" />
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="1dp"
+        android:layout_weight="0.04"
+        android:background="@drawable/menuback"
+        android:onClick="menu" />
+
+
+</LinearLayout>

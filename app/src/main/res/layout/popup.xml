@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@drawable/tlo_wyjscie">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zakończyłeś Quiz !"
+        android:textSize="25dp"
+        android:layout_marginTop="12dp"
+        android:layout_alignParentTop="true"
+        android:textColor="#ffffff"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zdobyte punkty:"
+        android:textSize="15dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="25dp"
+        android:layout_below="@+id/textView2"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/endscore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        android:textSize="25dp"
+        android:textColor="#ffffff"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/textView9"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Podaj Imię"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/nickname"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/nickname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:textColor="#ffffff"
+        android:layout_above="@+id/Wyniki"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2" />
+
+    <Button
+        android:id="@+id/Wyniki"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ZATWIERDŹ"
+        android:onClick="ok"
+        android:background="@drawable/nacisniecie_wyjscie"
+        android:layout_marginBottom="14dp"
+        android:textStyle="bold|italic"
+        android:textSize="16sp"
+        android:textColor="#ffffff"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView9"
+        android:layout_alignStart="@+id/textView9" />
+</RelativeLayout>

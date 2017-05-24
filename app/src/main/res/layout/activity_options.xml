@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/tlo2"
+    >
+
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="Opcje"
+        android:textColor="#ffffff"
+        android:textSize="45sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+    />
+
+
+    <Button
+        android:id="@+id/oProgramie"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:text=""
+        android:textColor="#ffffff"
+        android:layout_marginBottom="119dp"
+        android:background="#00ffffff"
+        android:layout_alignParentBottom="true"
+        android:onClick="oProgramie"
+        android:layout_alignLeft="@+id/Reset_wynikow"
+        android:layout_alignStart="@+id/Reset_wynikow" />
+
+
+    <Button
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:text="Dźwięk"
+        android:textColor="#ffffff"
+        android:id="@+id/button14"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/button_aktyw"
+        android:layout_above="@+id/button12"
+        android:layout_alignRight="@+id/button6"
+        android:layout_alignEnd="@+id/button6"
+        android:layout_marginRight="15dp"
+        android:layout_marginEnd="15dp" />
+
+    <Button
+        android:id="@+id/button12"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:text="Wibracje"
+        android:textColor="#ffffff"
+        android:background="@drawable/button_aktyw"
+        android:layout_marginBottom="28dp"
+        android:layout_above="@+id/Reset_wynikow"
+        android:layout_alignLeft="@+id/button14"
+        android:layout_alignStart="@+id/button14" />
+
+    <Button
+        android:id="@+id/Reset_wynikow"
+        android:onClick="Reset_wynikow"
+        android:layout_width="145dp"
+        android:layout_height="50dp"
+        android:text="Reset wyników"
+        android:textColor="#ffffff"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/nacisniecie"
+        android:layout_above="@+id/oProgramie"
+        android:layout_alignLeft="@+id/button12"
+        android:layout_alignStart="@+id/button12" />
+
+
+    <Button
+        android:id="@+id/button6"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="@drawable/nacisniecie_menu"
+        android:layout_weight="0.04"
+        android:onClick="menu"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_toEndOf="@+id/oProgramie"
+        android:orientation="horizontal"
+        android:layout_alignTop="@+id/button14"
+        android:layout_toRightOf="@+id/oProgramie"
+        android:layout_alignBottom="@+id/button14">
+
+        <Button
+            android:id="@+id/buttonMuzykaON"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/music_on"
+            android:onClick="MuzykaON"
+            android:text="" />
+
+        <Button
+            android:id="@+id/buttonMuzykaOFF"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:onClick="MuzykaOFF"
+            android:background="@drawable/music_off"
+            android:text="" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:layout_below="@+id/button14"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_toEndOf="@+id/button14"
+        android:layout_alignBottom="@+id/button12"
+        android:layout_toRightOf="@+id/button14">
+
+        <Button
+            android:id="@+id/button5"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/wibracje_on"
+            android:onClick="wibracjeON"
+            android:text="" />
+
+        <Button
+            android:id="@+id/button7"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/wibracje_off"
+            android:onClick="wibracjeOFF"
+
+            android:text="" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

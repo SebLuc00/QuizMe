@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="140sp"
+    android:background="@drawable/tlo_wyjscie">
+
+
+    <TextView
+        android:layout_marginTop="30sp"
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="   Na pewno chcesz zakończyć ?   "
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold|italic"
+
+
+        />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15sp"
+        >
+
+        <Button
+            android:id="@+id/potwierdz_wyjscie_tak"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="13sp"
+            android:layout_marginRight="40sp"
+            android:textSize="20sp"
+            android:background="@drawable/nacisniecie_wyjscie"
+            android:text="TAK"
+            android:textColor="#ffffff"
+            android:textStyle="bold|italic" />
+
+
+        <Button
+            android:id="@+id/potwierdz_wyjscie_nie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/nacisniecie_wyjscie"
+            android:text="NIE"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            android:textStyle="bold|italic" />
+    </TableRow>
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="" />
+
+
+</LinearLayout>
