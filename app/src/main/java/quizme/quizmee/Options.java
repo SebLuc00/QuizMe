@@ -47,57 +47,13 @@ public class Options extends AppCompatActivity {
 
 
         requestWindowFeature(Window.FEATURE_NO_TITLE);//wymusza pełny ekran w aktywnośći
-        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);//wymusza pełny ekran w aktywnośći
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN,WindowManager.LayoutParams.FLAG_FULLSCREEN);
+        //wymusza pełny ekran w aktywnośći
         super.onCreate(savedInstanceState);//wymusza pełny ekran w aktywnośći
 
         setContentView(R.layout.activity_options);
 
 
-/*
-
-        final MediaPlayer podklad=MediaPlayer.create(this,R.raw.podklad);
-
-
-        final Button buttonMuzykaON = (Button) findViewById(R.id.buttonMuzykaON);
-        buttonMuzykaON.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                if (podklad == null) {
-                    podklad.start();
-                    podklad.setLooping(true);
-
-                }
-
-            }
-        });
-
-        final Button buttonMuzykaOFF = (Button) findViewById(R.id.buttonMuzykaOFF);
-        buttonMuzykaON.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                podklad.pause();
-
-            }
-        });
-
-       */
-
-/*
-
-        final Vibrator wibracje=(Vibrator) getSystemService(VIBRATOR_SERVICE);
-
-        Switch switchWibracje = (Switch) findViewById(R.id.switchWibracje); //switch od wibracji
-        switchWibracje.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
-            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                if(isChecked)
-                {
-                    wibracje.vibrate(500);
-                }
-
-
-            }
-        });
-*/
 
     }
 
@@ -170,9 +126,7 @@ public class Options extends AppCompatActivity {
             public void onClick(View v) {
                 Reset_wynikow.cancel();
             }
-        });
-
-    }
+        });}
 
 
 

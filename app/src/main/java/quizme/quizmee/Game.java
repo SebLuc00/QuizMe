@@ -87,18 +87,14 @@ public class Game extends AppCompatActivity {
 
 
         Intent new_intent=new Intent(this,Pop.class);
-        new_intent.putExtra("counter",mScore); //here the value is integer so you use the  new_intent.putExtra(String name,int value)
+        new_intent.putExtra("counter",mScore);
 
         updateQuestion();
 
-
-
-
-        //Start of Button Listener for Button1
+        //Start button
         mButtonChoice1.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                //My logic for Button goes in here
 
                 if (mButtonChoice1.getText() == mAnswer){
                     TextView x = (TextView)findViewById(R.id.time);
@@ -107,23 +103,16 @@ public class Game extends AppCompatActivity {
                     mScore = mScore + 10 + mTimeScore;
                     updateScore(mScore);
                     updateQuestion();
-                    //This line of code is optiona
-
-
                 }else {
-
                     updateQuestion();
                 }
             }
         });
 
-        //End of Button Listener for Button1
 
-        //Start of Button Listener for Button2
         mButtonChoice2.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                //My logic for Button goes in here
 
                 if (mButtonChoice2.getText() == mAnswer){
                     TextView x = (TextView)findViewById(R.id.time);
@@ -132,25 +121,19 @@ public class Game extends AppCompatActivity {
                     mScore = mScore + 10 + mTimeScore;
                     updateScore(mScore);
                     updateQuestion();
-                    //This line of code is optiona
-
-
                 }else {
-
                     updateQuestion();
                 }
             }
         });
 
-        //End of Button Listener for Button2
 
 
-        //Start of Button Listener for Button3
+
+
         mButtonChoice3.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                //My logic for Button goes in here
-
                 if (mButtonChoice3.getText() == mAnswer){
                     TextView x = (TextView)findViewById(R.id.time);
                     String text = x.getText().toString();
@@ -158,23 +141,16 @@ public class Game extends AppCompatActivity {
                     mScore = mScore + 10 + mTimeScore;
                     updateScore(mScore);
                     updateQuestion();
-                    //This line of code is optiona
-
-
                 }else {
-
                     updateQuestion();
                 }
             }
         });
 
-        //End of Button Listener for Button3
-
-        //Start of Button Listener for Button4
         mButtonChoice4.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view){
-                //My logic for Button goes in here
+
 
                 if (mButtonChoice4.getText() == mAnswer){
                     TextView x = (TextView)findViewById(R.id.time);
@@ -183,17 +159,13 @@ public class Game extends AppCompatActivity {
                     mScore = mScore + 10 + mTimeScore;
                     updateScore(mScore);
                     updateQuestion();
-                    //This line of code is optiona
-
-
                 }else {
-
                     updateQuestion();
                 }
             }
         });
 
-        //End of Button Listener for Button4
+
 
 
 
